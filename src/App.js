@@ -8,6 +8,7 @@ class GetData extends React.Component {
       author: "",
       text: ""
     }
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount() {
@@ -26,10 +27,15 @@ class GetData extends React.Component {
 
   render() {
     return (
-      <figure className="data-container">
+      <figure id="quote-box">
         <blockquote id="text">{this.state.text}</blockquote>
         <figcaption id="author">{this.state.author}</figcaption>
+        <div id="action-container">
+          <a href="#" id="tweet-quote"><span className="icon-style"><i class="fa-brands fa-twitter"></i></span></a>
+          <button id="new-quote" onClick={this.componentDidMount}>Next</button>
+        </div>
       </figure>
+
     )
   }
 }

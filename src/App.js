@@ -31,7 +31,7 @@ class GetData extends React.Component {
         <blockquote id="text">{this.state.text}</blockquote>
         <figcaption id="author">{this.state.author}</figcaption>
         <div id="action-container">
-          <a href="#" id="tweet-quote"><span className="icon-style"><i class="fa-brands fa-twitter"></i></span></a>
+          <a href="https://twitter.com/intent/tweet" target="_blank" id="tweet-quote"><span className="icon-style"><i class="fa-brands fa-twitter"></i></span></a>
           <button id="new-quote" onClick={this.componentDidMount}>Next</button>
         </div>
       </figure>
